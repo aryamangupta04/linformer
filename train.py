@@ -20,6 +20,8 @@ import warnings
 def greedy_decode(model,source,source_mask,tokenizer_src,tokenizer_tgt,max_len,device):
     sos_idx=tokenizer_tgt.token_to_id('[SOS]')
     eos_idx=tokenizer_tgt.token_to_id('[EOS]')
+    pad_idx = tokenizer_tgt.token_to_id('[PAD]')
+
     x=349
     encoder_output=model.encode(source,source_mask)
 
@@ -32,13 +34,11 @@ def greedy_decode(model,source,source_mask,tokenizer_src,tokenizer_tgt,max_len,d
         #build mask for the target(decoder input)
 
         decoder_mask= causal_mask(decoder_input.size(1)).type_as(source_mask).to(device)
-        padded_input = torch.cat([decoder_input, torch.zeros(1, x).type_as(source).to(device)], dim=1)
+        padded_input = torch.cat([decoder_input, torch.zeros(1, x).fill_(pad_idx).type_as(source).to(device)], dim=1)
         x-=1
         out=model.decode(encoder_output,source_mask,padded_input,decoder_mask)
-
         prob=model.project(out[:,-1])
         _,next_word = torch.max(prob,dim=-1)
-        print('the next word is ',next_word)
         decoder_input= torch.cat([decoder_input,torch.empty(1,1).type_as(source).fill_(next_word.item()).to(device)],dim=1)
         if next_word == eos_idx:
             break
