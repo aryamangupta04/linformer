@@ -38,6 +38,7 @@ def greedy_decode(model,source,source_mask,tokenizer_src,tokenizer_tgt,max_len,d
 
         prob=model.project(out[:,-1])
         _,next_word = torch.max(prob,dim=-1)
+        print('the next word is ',next_word)
         decoder_input= torch.cat([decoder_input,torch.empty(1,1).type_as(source).fill_(next_word.item()).to(device)],dim=1)
         if next_word == eos_idx:
             break
