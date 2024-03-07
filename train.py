@@ -1,5 +1,7 @@
 import torch 
 import torch.nn as nn
+from nltk.translate.bleu_score import sentence_bleu
+
 
 from datasets import load_dataset
 from tokenizers import Tokenizer
@@ -152,9 +154,8 @@ def train_model(config):
     loss_fn=nn.CrossEntropyLoss(ignore_index=tokenizer_src.token_to_id('[PAD]'),label_smoothing=0.1).to(device)
 
     for epoch in range(initial_epoch,config['num_epochs']):
-        
         batch_iterator = tqdm(train_dataloader,desc=f'Processing epoch {epoch:02d}')
-        for batch in batch_iterator:
+        for batch_idx, batch in enumerate(batch_iterator):
             model.train()
             encoder_input=batch['encoder_input'].to(device)
             decoder_input=batch['decoder_input'].to(device)
@@ -169,7 +170,28 @@ def train_model(config):
 
             #(B,seq_len,tgt_vocab_size)--> (B*seq_len,tgt_vocab_size)
             loss=loss_fn(proj_output.view(-1,tokenizer_tgt.get_vocab_size()),label.view(-1))
+            _, predicted_ids = torch.max(proj_output, dim=2)
+        
+            if batch_idx % len(train_dataloader) == 0: 
+                source_tokens = [tokenizer_src.id_to_token(tok_id) for tok_id in encoder_input[0]]
+                predicted_tokens = [tokenizer_tgt.id_to_token(tok_id) for tok_id in predicted_ids[0]]
+                source_sentence = ' '.join(source_tokens).split('[PAD]')[0]  
+                
+            
+                predicted_sentence = ' '.join(predicted_tokens).split('[PAD]')[0]  
 
+                #target sentence
+                target_tokens = [tokenizer_tgt.id_to_token(tok_id) for tok_id in label[0]]
+                target_sentence = ' '.join(target_tokens).split('[PAD]')[0]
+                print(f"Actual Target: {target_sentence}")
+
+                print(f"Source Text: {source_sentence}\n")
+                print(f"Sample Prediction: {predicted_sentence}\n")
+
+                reference = [target_sentence.split()]
+                candidate = predicted_sentence.split()
+                score = sentence_bleu(reference, candidate)
+                print(f"BLEU Score: {score}")
             batch_iterator.set_postfix({f"loss":f"{loss.item():6.3f}"})
 #log the loss
             writer.add_scalar('train loss', loss.item(), global_step)
