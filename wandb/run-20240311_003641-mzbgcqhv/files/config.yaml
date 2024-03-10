@@ -1,0 +1,72 @@
+wandb_version: 1
+
+batch_size:
+  desc: null
+  value: 8
+num_epochs:
+  desc: null
+  value: 20
+lr:
+  desc: null
+  value: 0.0001
+seq_len:
+  desc: null
+  value: 350
+d_model:
+  desc: null
+  value: 512
+lang_src:
+  desc: null
+  value: en
+lang_tgt:
+  desc: null
+  value: it
+model_folder:
+  desc: null
+  value: weights
+model_basename:
+  desc: null
+  value: tmodel_
+preload:
+  desc: null
+  value: null
+tokenizer_file:
+  desc: null
+  value: tokenizer_{0}.json
+experiment_name:
+  desc: null
+  value: runs
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.0
+    cli_version: 0.16.4
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1710097601.0
+    t:
+      1:
+      - 1
+      - 5
+      - 49
+      - 51
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 49
+      - 51
+      - 53
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.10.0
+      5: 0.16.4
+      8:
+      - 3
+      - 5
+      13: windows-amd64

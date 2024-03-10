@@ -1,7 +1,7 @@
 import torch 
 import torch.nn as nn
 from nltk.translate.bleu_score import sentence_bleu
-
+import wandb
 
 from datasets import load_dataset
 from tokenizers import Tokenizer
@@ -171,6 +171,7 @@ def train_model(config):
             #(B,seq_len,tgt_vocab_size)--> (B*seq_len,tgt_vocab_size)
             loss=loss_fn(proj_output.view(-1,tokenizer_tgt.get_vocab_size()),label.view(-1))
             _, predicted_ids = torch.max(proj_output, dim=2)
+            wandb.log({"train_loss": loss.item(), "global_step": global_step})
         
             if batch_idx % len(train_dataloader) == 0: 
                 source_tokens = [tokenizer_src.id_to_token(tok_id) for tok_id in encoder_input[0]]
@@ -179,7 +180,6 @@ def train_model(config):
                 
             
                 predicted_sentence = ' '.join(predicted_tokens).split('[PAD]')[0]  
-
                 #target sentence
                 target_tokens = [tokenizer_tgt.id_to_token(tok_id) for tok_id in label[0]]
                 target_sentence = ' '.join(target_tokens).split('[PAD]')[0]
@@ -217,5 +217,11 @@ def train_model(config):
 if __name__ =='__main__':
     warnings.filterwarnings('ignore')
     config=get_config()
+    wandb.login(key='c9e1ee6204d2bc6101067654506f776e67ef818e')
+    wandb.init(
+        project = "Linformer", 
+        config =config,
+        name= 'Version 1'
+        )
     train_model(config)
 

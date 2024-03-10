@@ -1,0 +1,78 @@
+2024-03-11 00:36:41,698 INFO    StreamThr :2224 [internal.py:wandb_internal():86] W&B internal server running at pid: 2224, started at: 2024-03-11 00:36:41.698815
+2024-03-11 00:36:41,698 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: status
+2024-03-11 00:36:41,705 INFO    WriterThread:2224 [datastore.py:open_for_write():87] open: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003641-mzbgcqhv\run-mzbgcqhv.wandb
+2024-03-11 00:36:41,705 DEBUG   SenderThread:2224 [sender.py:send():378] send: header
+2024-03-11 00:36:41,749 DEBUG   SenderThread:2224 [sender.py:send():378] send: run
+2024-03-11 00:36:42,582 INFO    SenderThread:2224 [dir_watcher.py:__init__():211] watching files in: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003641-mzbgcqhv\files
+2024-03-11 00:36:42,582 INFO    SenderThread:2224 [sender.py:_start_run_threads():1099] run started: mzbgcqhv with start time 1710097601.698814
+2024-03-11 00:36:42,593 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: check_version
+2024-03-11 00:36:42,593 DEBUG   SenderThread:2224 [sender.py:send_request():405] send_request: check_version
+2024-03-11 00:36:42,729 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: run_start
+2024-03-11 00:36:42,750 DEBUG   HandlerThread:2224 [system_info.py:__init__():26] System info init
+2024-03-11 00:36:42,750 DEBUG   HandlerThread:2224 [system_info.py:__init__():41] System info init done
+2024-03-11 00:36:42,750 INFO    HandlerThread:2224 [system_monitor.py:start():194] Starting system monitor
+2024-03-11 00:36:42,750 INFO    SystemMonitor:2224 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-11 00:36:42,750 INFO    HandlerThread:2224 [system_monitor.py:probe():214] Collecting system info
+2024-03-11 00:36:42,761 INFO    SystemMonitor:2224 [interfaces.py:start():190] Started cpu monitoring
+2024-03-11 00:36:42,761 INFO    SystemMonitor:2224 [interfaces.py:start():190] Started disk monitoring
+2024-03-11 00:36:42,761 INFO    SystemMonitor:2224 [interfaces.py:start():190] Started gpu monitoring
+2024-03-11 00:36:42,771 INFO    SystemMonitor:2224 [interfaces.py:start():190] Started memory monitoring
+2024-03-11 00:36:42,771 DEBUG   HandlerThread:2224 [system_info.py:probe():150] Probing system
+2024-03-11 00:36:42,788 INFO    SystemMonitor:2224 [interfaces.py:start():190] Started network monitoring
+2024-03-11 00:36:42,792 DEBUG   HandlerThread:2224 [system_info.py:_probe_git():135] Probing git
+2024-03-11 00:36:42,863 DEBUG   HandlerThread:2224 [system_info.py:_probe_git():143] Probing git done
+2024-03-11 00:36:42,863 DEBUG   HandlerThread:2224 [system_info.py:probe():198] Probing system done
+2024-03-11 00:36:42,863 DEBUG   HandlerThread:2224 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.10.0', 'heartbeatAt': '2024-03-10T19:06:42.788625', 'startedAt': '2024-03-10T19:06:41.688676', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\Users\\HP PAVILION\\Documents\\GitHub\\final\\train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/aryamangupta04/linformer.git', 'commit': '9bf3e7570b21ba5a3e6f8980350c90ef429a06f6'}, 'email': 'aryamangupta2004@gmail.com', 'root': 'C:/Users/HP PAVILION/Documents/GitHub/final', 'host': 'hp', 'username': 'HP PAVILION', 'executable': 'C:\\Users\\HP PAVILION\\AppData\\Local\\Programs\\Python\\Python310\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3000.0, 'min': 0.0, 'max': 3000.0}, 'cpu_freq_per_core': [{'current': 3000.0, 'min': 0.0, 'max': 3000.0}], 'disk': {'/': {'total': 237.82030868530273, 'used': 169.6618537902832}}, 'gpu': 'NVIDIA GeForce GTX 1650 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1650 Ti', 'memory_total': 4294967296}], 'memory': {'total': 7.36431884765625}}
+2024-03-11 00:36:42,863 INFO    HandlerThread:2224 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-11 00:36:42,863 INFO    HandlerThread:2224 [system_monitor.py:probe():227] Publishing system info
+2024-03-11 00:36:42,863 INFO    HandlerThread:2224 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-11 00:36:42,873 DEBUG   SenderThread:2224 [sender.py:send():378] send: files
+2024-03-11 00:36:42,873 INFO    SenderThread:2224 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-03-11 00:36:42,989 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-11 00:36:42,990 DEBUG   SenderThread:2224 [sender.py:send_request():405] send_request: python_packages
+2024-03-11 00:36:42,990 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-11 00:36:42,991 DEBUG   SenderThread:2224 [sender.py:send_request():405] send_request: stop_status
+2024-03-11 00:36:42,993 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 00:36:43,422 DEBUG   SenderThread:2224 [sender.py:send():378] send: telemetry
+2024-03-11 00:36:43,589 INFO    Thread-16 :2224 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003641-mzbgcqhv\files\requirements.txt
+2024-03-11 00:36:43,589 INFO    Thread-16 :2224 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003641-mzbgcqhv\files\output.log
+2024-03-11 00:36:43,589 INFO    Thread-16 :2224 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003641-mzbgcqhv\files\wandb-metadata.json
+2024-03-11 00:36:44,017 INFO    wandb-upload_0:2224 [upload_job.py:push():131] Uploaded file C:\Users\HPPAVI~1\AppData\Local\Temp\tmp0ni1iki4wandb\c3huc80e-wandb-metadata.json
+2024-03-11 00:36:45,599 INFO    Thread-16 :2224 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003641-mzbgcqhv\files\output.log
+2024-03-11 00:36:47,458 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:36:52,492 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:36:55,667 INFO    Thread-16 :2224 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003641-mzbgcqhv\files\output.log
+2024-03-11 00:36:57,526 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:36:58,004 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 00:36:58,014 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-11 00:36:58,016 DEBUG   SenderThread:2224 [sender.py:send_request():405] send_request: stop_status
+2024-03-11 00:36:58,682 INFO    Thread-16 :2224 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003641-mzbgcqhv\files\output.log
+2024-03-11 00:37:03,401 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:37:08,431 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:37:10,846 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:37:10,856 DEBUG   SenderThread:2224 [sender.py:send():378] send: history
+2024-03-11 00:37:10,856 DEBUG   SenderThread:2224 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:37:10,871 INFO    SenderThread:2224 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:37:11,756 INFO    Thread-16 :2224 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003641-mzbgcqhv\files\output.log
+2024-03-11 00:37:11,757 INFO    Thread-16 :2224 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003641-mzbgcqhv\files\wandb-summary.json
+2024-03-11 00:37:12,764 INFO    Thread-16 :2224 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003641-mzbgcqhv\files\output.log
+2024-03-11 00:37:13,023 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 00:37:13,026 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-11 00:37:13,028 DEBUG   SenderThread:2224 [sender.py:send_request():405] send_request: stop_status
+2024-03-11 00:37:13,499 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:37:14,777 INFO    Thread-16 :2224 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003641-mzbgcqhv\files\config.yaml
+2024-03-11 00:37:18,864 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:37:23,897 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:37:24,989 INFO    Thread-16 :2224 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003641-mzbgcqhv\files\output.log
+2024-03-11 00:37:30,671 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 00:37:30,711 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:37:30,718 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-11 00:37:30,721 DEBUG   SenderThread:2224 [sender.py:send_request():405] send_request: stop_status
+2024-03-11 00:37:34,679 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:37:35,901 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:37:42,026 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:37:43,130 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-11 00:37:43,153 DEBUG   SenderThread:2224 [sender.py:send_request():405] send_request: stop_status
+2024-03-11 00:37:43,403 DEBUG   SystemMonitor:2224 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-11 00:37:44,571 DEBUG   SenderThread:2224 [sender.py:send():378] send: stats
+2024-03-11 00:37:49,589 DEBUG   HandlerThread:2224 [handler.py:handle_request():146] handle_request: status_report

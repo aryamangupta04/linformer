@@ -1,0 +1,519 @@
+2024-03-11 00:39:42,941 INFO    StreamThr :10080 [internal.py:wandb_internal():86] W&B internal server running at pid: 10080, started at: 2024-03-11 00:39:42.941117
+2024-03-11 00:39:42,941 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status
+2024-03-11 00:39:42,948 INFO    WriterThread:10080 [datastore.py:open_for_write():87] open: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\run-1g8c0ybz.wandb
+2024-03-11 00:39:42,948 DEBUG   SenderThread:10080 [sender.py:send():378] send: header
+2024-03-11 00:39:43,004 DEBUG   SenderThread:10080 [sender.py:send():378] send: run
+2024-03-11 00:39:44,169 INFO    SenderThread:10080 [dir_watcher.py:__init__():211] watching files in: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files
+2024-03-11 00:39:44,169 INFO    SenderThread:10080 [sender.py:_start_run_threads():1099] run started: 1g8c0ybz with start time 1710097782.941559
+2024-03-11 00:39:44,185 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: check_version
+2024-03-11 00:39:44,185 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: check_version
+2024-03-11 00:39:44,620 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: run_start
+2024-03-11 00:39:45,782 DEBUG   HandlerThread:10080 [system_info.py:__init__():26] System info init
+2024-03-11 00:39:45,782 DEBUG   HandlerThread:10080 [system_info.py:__init__():41] System info init done
+2024-03-11 00:39:45,782 INFO    HandlerThread:10080 [system_monitor.py:start():194] Starting system monitor
+2024-03-11 00:39:45,782 INFO    SystemMonitor:10080 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-11 00:39:45,782 INFO    HandlerThread:10080 [system_monitor.py:probe():214] Collecting system info
+2024-03-11 00:39:45,782 INFO    SystemMonitor:10080 [interfaces.py:start():190] Started cpu monitoring
+2024-03-11 00:39:45,782 INFO    SystemMonitor:10080 [interfaces.py:start():190] Started disk monitoring
+2024-03-11 00:39:45,782 INFO    SystemMonitor:10080 [interfaces.py:start():190] Started gpu monitoring
+2024-03-11 00:39:45,797 INFO    SystemMonitor:10080 [interfaces.py:start():190] Started memory monitoring
+2024-03-11 00:39:45,797 INFO    SystemMonitor:10080 [interfaces.py:start():190] Started network monitoring
+2024-03-11 00:39:45,829 DEBUG   HandlerThread:10080 [system_info.py:probe():150] Probing system
+2024-03-11 00:39:45,829 DEBUG   HandlerThread:10080 [system_info.py:_probe_git():135] Probing git
+2024-03-11 00:39:45,907 DEBUG   HandlerThread:10080 [system_info.py:_probe_git():143] Probing git done
+2024-03-11 00:39:45,907 DEBUG   HandlerThread:10080 [system_info.py:probe():198] Probing system done
+2024-03-11 00:39:45,907 DEBUG   HandlerThread:10080 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.10.0', 'heartbeatAt': '2024-03-10T19:09:45.829108', 'startedAt': '2024-03-10T19:09:42.927640', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\Users\\HP PAVILION\\Documents\\GitHub\\final\\train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/aryamangupta04/linformer.git', 'commit': '9bf3e7570b21ba5a3e6f8980350c90ef429a06f6'}, 'email': 'aryamangupta2004@gmail.com', 'root': 'C:/Users/HP PAVILION/Documents/GitHub/final', 'host': 'hp', 'username': 'HP PAVILION', 'executable': 'C:\\Users\\HP PAVILION\\AppData\\Local\\Programs\\Python\\Python310\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3000.0, 'min': 0.0, 'max': 3000.0}, 'cpu_freq_per_core': [{'current': 3000.0, 'min': 0.0, 'max': 3000.0}], 'disk': {'/': {'total': 237.82030868530273, 'used': 169.35108947753906}}, 'gpu': 'NVIDIA GeForce GTX 1650 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1650 Ti', 'memory_total': 4294967296}], 'memory': {'total': 7.36431884765625}}
+2024-03-11 00:39:45,907 INFO    HandlerThread:10080 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-11 00:39:45,907 INFO    HandlerThread:10080 [system_monitor.py:probe():227] Publishing system info
+2024-03-11 00:39:45,907 INFO    HandlerThread:10080 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-11 00:39:45,922 DEBUG   SenderThread:10080 [sender.py:send():378] send: files
+2024-03-11 00:39:45,922 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-03-11 00:39:46,191 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-metadata.json
+2024-03-11 00:39:46,726 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-11 00:39:46,726 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: python_packages
+2024-03-11 00:39:46,726 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-11 00:39:46,726 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: stop_status
+2024-03-11 00:39:46,726 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 00:39:47,199 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\requirements.txt
+2024-03-11 00:39:47,246 DEBUG   SenderThread:10080 [sender.py:send():378] send: telemetry
+2024-03-11 00:39:47,451 INFO    wandb-upload_0:10080 [upload_job.py:push():131] Uploaded file C:\Users\HPPAVI~1\AppData\Local\Temp\tmp4abkjq6qwandb\u932q5z7-wandb-metadata.json
+2024-03-11 00:39:48,211 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:39:48,257 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:39:50,216 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:39:53,278 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:39:58,314 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:40:01,300 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:01,739 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 00:40:01,739 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-11 00:40:01,739 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: stop_status
+2024-03-11 00:40:04,261 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:40:05,187 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:05,203 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:05,203 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:05,203 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:05,370 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:05,370 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:06,970 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:06,970 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:06,975 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:06,975 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:07,386 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:07,386 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:08,498 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:08,498 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:08,498 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:08,498 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:09,396 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:09,400 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:09,520 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:40:11,411 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:15,503 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:40:16,461 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\config.yaml
+2024-03-11 00:40:16,746 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 00:40:16,760 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-11 00:40:16,760 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: stop_status
+2024-03-11 00:40:19,809 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:19,809 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:19,809 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:19,809 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:20,506 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:21,520 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:21,910 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:40:23,300 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:23,300 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:23,300 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:23,316 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:23,539 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:25,560 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:27,209 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:27,209 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:27,209 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:27,209 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:40:27,209 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:27,587 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:29,607 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:30,623 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:30,623 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:30,623 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:30,623 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:31,620 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:31,620 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:31,762 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 00:40:31,777 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-11 00:40:31,777 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: stop_status
+2024-03-11 00:40:33,148 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:40:33,642 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:34,476 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:34,476 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:34,476 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:34,476 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:34,655 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:35,660 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:37,673 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:37,911 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:37,911 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:37,911 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:37,916 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:38,690 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:38,926 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:40:39,697 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:41,783 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:41,788 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:41,788 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:41,791 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:42,716 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:43,721 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:44,054 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:44,054 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:44,054 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:44,054 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:40:44,054 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:44,731 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:45,587 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:45,587 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:45,587 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:45,587 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:45,743 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:45,745 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:45,827 DEBUG   SystemMonitor:10080 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-11 00:40:45,827 DEBUG   SenderThread:10080 [sender.py:send():378] send: stats
+2024-03-11 00:40:46,767 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 00:40:46,798 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-11 00:40:46,798 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: stop_status
+2024-03-11 00:40:46,858 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:47,415 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:47,415 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:47,415 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:47,761 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:47,761 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:48,405 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:48,407 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:48,407 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:48,407 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:48,766 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:49,671 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:49,671 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:49,671 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:49,671 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:40:49,671 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:49,767 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:49,767 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:51,270 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:51,273 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:51,273 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:51,273 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:51,788 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:51,788 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:52,537 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:52,537 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:52,537 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:52,537 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:52,797 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:53,803 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:54,054 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:54,054 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:54,054 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:54,054 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:54,808 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:55,335 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:55,342 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:55,342 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:55,342 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:55,342 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:40:55,822 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:55,822 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:56,866 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:56,866 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:56,866 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:56,866 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:57,835 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:57,835 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:58,115 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:58,115 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:58,115 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:58,115 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:58,849 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:40:59,655 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:40:59,655 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:40:59,655 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:40:59,655 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:40:59,857 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:40:59,857 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:41:00,926 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:00,933 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:00,933 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:00,933 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:41:00,933 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:01,782 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 00:41:01,806 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-11 00:41:01,807 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: stop_status
+2024-03-11 00:41:01,873 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:41:01,873 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:41:02,469 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:03,744 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:03,891 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:41:05,273 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:06,538 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:06,835 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:41:08,062 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:09,335 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:10,869 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:11,876 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:41:12,168 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:13,735 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:15,008 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:16,532 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:16,787 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 00:41:17,781 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:19,312 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:20,423 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:20,423 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:41:20,423 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:20,423 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:20,438 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:20,438 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:20,438 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:20,438 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:20,438 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:20,438 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:20,438 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:20,438 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:20,438 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:20,454 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:20,454 DEBUG   SenderThread:10080 [sender.py:send():378] send: stats
+2024-03-11 00:41:20,454 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:20,454 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:20,454 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:20,454 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:20,454 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:20,454 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:20,454 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:20,454 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:20,454 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:20,578 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:20,594 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:20,594 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:20,594 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:21,069 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:41:21,946 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:41:22,091 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:41:22,123 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:22,123 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:22,123 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:22,123 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:23,100 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:41:23,383 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:23,383 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:23,383 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:23,383 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:24,116 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:41:24,116 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:41:24,915 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:24,915 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:24,915 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:24,915 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:25,118 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:41:26,131 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:41:26,178 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-11 00:41:26,178 DEBUG   SenderThread:10080 [sender.py:send():378] send: history
+2024-03-11 00:41:26,178 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: summary_record
+2024-03-11 00:41:26,178 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:41:26,178 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:26,988 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:41:27,146 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:41:27,781 DEBUG   SenderThread:10080 [sender.py:send():378] send: exit
+2024-03-11 00:41:27,781 INFO    SenderThread:10080 [sender.py:send_exit():585] handling exit code: 255
+2024-03-11 00:41:27,781 INFO    SenderThread:10080 [sender.py:send_exit():587] handling runtime: 103
+2024-03-11 00:41:27,781 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:27,781 INFO    SenderThread:10080 [sender.py:send_exit():593] send defer
+2024-03-11 00:41:27,781 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:41:27,781 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-11 00:41:27,781 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:41:27,781 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-03-11 00:41:27,781 INFO    SenderThread:10080 [sender.py:transition_state():613] send defer: 1
+2024-03-11 00:41:27,781 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:41:27,781 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-11 00:41:27,781 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:41:27,781 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-03-11 00:41:27,781 INFO    SenderThread:10080 [sender.py:transition_state():613] send defer: 2
+2024-03-11 00:41:27,781 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:41:27,781 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-11 00:41:27,781 INFO    HandlerThread:10080 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-11 00:41:27,781 DEBUG   SystemMonitor:10080 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-11 00:41:27,781 INFO    HandlerThread:10080 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-11 00:41:27,781 DEBUG   SystemMonitor:10080 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-11 00:41:27,797 INFO    HandlerThread:10080 [interfaces.py:finish():202] Joined disk monitor
+2024-03-11 00:41:27,845 INFO    HandlerThread:10080 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-11 00:41:27,845 INFO    HandlerThread:10080 [interfaces.py:finish():202] Joined memory monitor
+2024-03-11 00:41:27,845 INFO    HandlerThread:10080 [interfaces.py:finish():202] Joined network monitor
+2024-03-11 00:41:27,845 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:41:27,845 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-03-11 00:41:27,845 INFO    SenderThread:10080 [sender.py:transition_state():613] send defer: 3
+2024-03-11 00:41:27,845 DEBUG   SenderThread:10080 [sender.py:send():378] send: stats
+2024-03-11 00:41:27,845 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:41:27,845 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-11 00:41:27,845 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:41:27,845 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-03-11 00:41:27,845 INFO    SenderThread:10080 [sender.py:transition_state():613] send defer: 4
+2024-03-11 00:41:27,845 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:41:27,845 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-11 00:41:27,845 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:41:27,845 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-03-11 00:41:27,845 INFO    SenderThread:10080 [sender.py:transition_state():613] send defer: 5
+2024-03-11 00:41:27,845 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:41:27,861 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-11 00:41:27,861 DEBUG   SenderThread:10080 [sender.py:send():378] send: summary
+2024-03-11 00:41:27,861 INFO    SenderThread:10080 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-11 00:41:27,861 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:41:27,861 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-03-11 00:41:27,861 INFO    SenderThread:10080 [sender.py:transition_state():613] send defer: 6
+2024-03-11 00:41:27,861 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:41:27,861 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-11 00:41:27,861 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:41:27,861 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-03-11 00:41:27,861 INFO    SenderThread:10080 [sender.py:transition_state():613] send defer: 7
+2024-03-11 00:41:27,861 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:41:27,861 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:41:27,861 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-11 00:41:27,861 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:41:27,861 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-03-11 00:41:28,162 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:41:28,162 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:41:28,795 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-11 00:41:30,168 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:41:31,684 INFO    SenderThread:10080 [sender.py:transition_state():613] send defer: 8
+2024-03-11 00:41:31,684 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: poll_exit
+2024-03-11 00:41:31,684 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:41:31,684 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-11 00:41:31,688 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:41:31,688 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-03-11 00:41:31,688 INFO    SenderThread:10080 [job_builder.py:build():298] Attempting to build job artifact
+2024-03-11 00:41:31,690 INFO    SenderThread:10080 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-03-11 00:41:31,821 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-11 00:41:31,906 INFO    SenderThread:10080 [job_builder.py:build():404] adding wandb-job metadata file
+2024-03-11 00:41:31,939 INFO    SenderThread:10080 [sender.py:transition_state():613] send defer: 9
+2024-03-11 00:41:31,939 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: poll_exit
+2024-03-11 00:41:31,939 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:41:31,939 DEBUG   SenderThread:10080 [sender.py:send():378] send: artifact
+2024-03-11 00:41:31,939 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-11 00:41:32,185 INFO    Thread-16 :10080 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:41:32,848 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-11 00:41:37,893 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:41:42,924 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:41:47,964 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:41:53,004 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:41:58,042 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:41:58,910 WARNING FileStreamThread:10080 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x0000017F2CBE6DD0>>, timeout=180.0), args: ('https://api.wandb.ai/files/aryamangupta2004/linformer/1g8c0ybz/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"train_loss": 7.889118671417236, "global_step": 40, "_timestamp": 1710097886.178994, "_runtime": 103.23743486404419, "_step": 40, "_wandb": {"runtime": 103}}']}, 'wandb-history.jsonl': {'offset': 24, 'content': ['{"train_loss": 8.718867301940918, "global_step": 24, "_timestamp": 1710097863.7441142, "_runtime": 80.80255508422852, "_step": 24}', '{"train_loss": 8.68809986114502, "global_step": 25, "_timestamp": 1710097865.2730484, "_runtime": 82.3314893245697, "_step": 25}', '{"train_loss": 8.75367546081543, "global_step": 26, "_timestamp": 1710097866.5384092, "_runtime": 83.59685015678406, "_step": 26}', '{"train_loss": 8.613570213317871, "global_step": 27, "_timestamp": 1710097868.062857, "_runtime": 85.12129783630371, "_step": 27}', '{"train_loss": 8.640501022338867, "global_step": 28, "_timestamp": 1710097869.3352354, "_runtime": 86.39367628097534, "_step": 28}', '{"train_loss": 8.513769149780273, "global_step": 29, "_timestamp": 1710097870.8698554, "_runtime": 87.92829632759094, "_step": 29}', '{"train_loss": 8.444693565368652, "global_step": 30, "_timestamp": 1710097872.1681838, "_runtime": 89.22662472724915, "_step": 30}', '{"train_loss": 8.494474411010742, "global_step": 31, "_timestamp": 1710097873.7359803, "_runtime": 90.79442119598389, "_step": 31}', '{"train_loss": 8.38031005859375, "global_step": 32, "_timestamp": 1710097875.0020056, "_runtime": 92.0604465007782, "_step": 32}', '{"train_loss": 8.396270751953125, "global_step": 33, "_timestamp": 1710097876.5326495, "_runtime": 93.59109044075012, "_step": 33}', '{"train_loss": 8.182684898376465, "global_step": 34, "_timestamp": 1710097877.7813873, "_runtime": 94.83982825279236, "_step": 34}', '{"train_loss": 8.316879272460938, "global_step": 35, "_timestamp": 1710097879.3126287, "_runtime": 96.37106966972351, "_step": 35}', '{"train_loss": 8.210827827453613, "global_step": 36, "_timestamp": 1710097880.5782745, "_runtime": 97.63671541213989, "_step": 36}', '{"train_loss": 8.312021255493164, "global_step": 37, "_timestamp": 1710097882.1231382, "_runtime": 99.18157911300659, "_step": 37}', '{"train_loss": 8.120840072631836, "global_step": 38, "_timestamp": 1710097883.383906, "_runtime": 100.44234681129456, "_step": 38}', '{"train_loss": 8.157307624816895, "global_step": 39, "_timestamp": 1710097884.915055, "_runtime": 101.9734959602356, "_step": 39}', '{"train_loss": 7.889118671417236, "global_step": 40, "_timestamp": 1710097886.178994, "_runtime": 103.23743486404419, "_step": 40}']}, 'wandb-events.jsonl': {'offset': 1, 'content': ['{"system.disk.\\\\.usagePercent": 71.1, "system.disk.\\\\.usageGB": 169.15, "system.disk.in": 1728.81, "system.disk.out": 468.24, "system.cpu": 3.56, "system.cpu.0.cpu_percent": 8.63, "system.cpu.1.cpu_percent": 11.87, "system.cpu.2.cpu_percent": 10.03, "system.cpu.3.cpu_percent": 28.49, "system.cpu.4.cpu_percent": 5.01, "system.cpu.5.cpu_percent": 5.91, "system.cpu.6.cpu_percent": 11.03, "system.cpu.7.cpu_percent": 14.17, "system.cpu.8.cpu_percent": 2.54, "system.cpu.9.cpu_percent": 1.7, "system.cpu.10.cpu_percent": 12.38, "system.cpu.11.cpu_percent": 2.07, "system.proc.cpu.threads": 41, "system.proc.memory.availableMB": 496.52, "system.memory": 93.41, "system.proc.memory.rssMB": 1599.82, "system.proc.memory.percent": 21.21, "system.network.sent": 5983177.93, "system.network.recv": 4413383.4, "system.gpu.0.memoryAllocated": 99.62, "system.gpu.process.0.memoryAllocated": 99.62, "system.gpu.0.memoryAllocatedBytes": 4278665216.0, "system.gpu.process.0.memoryAllocatedBytes": 4278665216.0, "system.gpu.0.memory": 69.93, "system.gpu.process.0.memory": 69.93, "system.gpu.0.gpu": 99.53, "system.gpu.process.0.gpu": 99.53, "system.gpu.0.temp": 48.53, "system.gpu.process.0.temp": 48.53, "system.gpu.0.powerWatts": 18.77, "system.gpu.process.0.powerWatts": 18.77, "system.gpu.0.powerPercent": 96.15, "system.gpu.process.0.powerPercent": 96.15, "_wandb": true, "_timestamp": 1710097875.837326, "_runtime": 92.895767}', '{"system.disk.\\\\.usagePercent": 71.1, "system.disk.\\\\.usageGB": 169.16, "system.disk.in": 2487.22, "system.disk.out": 564.64, "system.cpu": 7.56, "system.cpu.0.cpu_percent": 51.77, "system.cpu.1.cpu_percent": 17.83, "system.cpu.2.cpu_percent": 21.85, "system.cpu.3.cpu_percent": 25.77, "system.cpu.4.cpu_percent": 10.77, "system.cpu.5.cpu_percent": 12.07, "system.cpu.6.cpu_percent": 8.78, "system.cpu.7.cpu_percent": 7.92, "system.cpu.8.cpu_percent": 1.03, "system.cpu.9.cpu_percent": 1.03, "system.cpu.10.cpu_percent": 0.0, "system.cpu.11.cpu_percent": 0.52, "system.proc.cpu.threads": 41, "system.proc.memory.availableMB": 569.34, "system.memory": 92.45, "system.proc.memory.rssMB": 1601.43, "system.proc.memory.percent": 21.24, "system.network.sent": 11511303.5, "system.network.recv": 5494210.5, "system.gpu.0.memoryAllocated": 99.57, "system.gpu.process.0.memoryAllocated": 99.57, "system.gpu.0.memoryAllocatedBytes": 4276568064.0, "system.gpu.process.0.memoryAllocatedBytes": 4276568064.0, "system.gpu.0.memory": 37.4, "system.gpu.process.0.memory": 37.4, "system.gpu.0.gpu": 99.13, "system.gpu.process.0.gpu": 99.13, "system.gpu.0.temp": 51.87, "system.gpu.process.0.temp": 51.87, "system.gpu.0.powerWatts": 29.46, "system.gpu.process.0.powerWatts": 29.46, "system.gpu.0.powerPercent": 98.21, "system.gpu.process.0.powerPercent": 98.21, "_wandb": true, "_timestamp": 1710097887.79762, "_runtime": 104.856061}']}, 'output.log': {'offset': 8, 'content': ['ERROR 2024-03-10T19:11:29.676204 Traceback (most recent call last):\n', 'ERROR 2024-03-10T19:11:29.676204   File "C:\\Users\\HP PAVILION\\Documents\\GitHub\\final\\train.py", line 226, in <module>\n', 'ERROR 2024-03-10T19:11:29.676204     train_model(config)\n', 'ERROR 2024-03-10T19:11:29.676204   File "C:\\Users\\HP PAVILION\\Documents\\GitHub\\final\\train.py", line 174, in train_model\n', 'ERROR 2024-03-10T19:11:29.676204     wandb.log({"train_loss": loss.item(), "global_step": global_step})\n', 'ERROR 2024-03-10T19:11:29.676204 KeyboardInterrupt\n']}}, 'dropped': 0}}
+2024-03-11 00:42:03,064 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:42:04,460 WARNING FileStreamThread:10080 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/aryamangupta2004/linformer/1g8c0ybz/file_stream (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000017F2DF10550>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x0000017F2CBE6DD0>>, timeout=180.0), args: ('https://api.wandb.ai/files/aryamangupta2004/linformer/1g8c0ybz/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"train_loss": 7.889118671417236, "global_step": 40, "_timestamp": 1710097886.178994, "_runtime": 103.23743486404419, "_step": 40, "_wandb": {"runtime": 103}}']}, 'wandb-history.jsonl': {'offset': 24, 'content': ['{"train_loss": 8.718867301940918, "global_step": 24, "_timestamp": 1710097863.7441142, "_runtime": 80.80255508422852, "_step": 24}', '{"train_loss": 8.68809986114502, "global_step": 25, "_timestamp": 1710097865.2730484, "_runtime": 82.3314893245697, "_step": 25}', '{"train_loss": 8.75367546081543, "global_step": 26, "_timestamp": 1710097866.5384092, "_runtime": 83.59685015678406, "_step": 26}', '{"train_loss": 8.613570213317871, "global_step": 27, "_timestamp": 1710097868.062857, "_runtime": 85.12129783630371, "_step": 27}', '{"train_loss": 8.640501022338867, "global_step": 28, "_timestamp": 1710097869.3352354, "_runtime": 86.39367628097534, "_step": 28}', '{"train_loss": 8.513769149780273, "global_step": 29, "_timestamp": 1710097870.8698554, "_runtime": 87.92829632759094, "_step": 29}', '{"train_loss": 8.444693565368652, "global_step": 30, "_timestamp": 1710097872.1681838, "_runtime": 89.22662472724915, "_step": 30}', '{"train_loss": 8.494474411010742, "global_step": 31, "_timestamp": 1710097873.7359803, "_runtime": 90.79442119598389, "_step": 31}', '{"train_loss": 8.38031005859375, "global_step": 32, "_timestamp": 1710097875.0020056, "_runtime": 92.0604465007782, "_step": 32}', '{"train_loss": 8.396270751953125, "global_step": 33, "_timestamp": 1710097876.5326495, "_runtime": 93.59109044075012, "_step": 33}', '{"train_loss": 8.182684898376465, "global_step": 34, "_timestamp": 1710097877.7813873, "_runtime": 94.83982825279236, "_step": 34}', '{"train_loss": 8.316879272460938, "global_step": 35, "_timestamp": 1710097879.3126287, "_runtime": 96.37106966972351, "_step": 35}', '{"train_loss": 8.210827827453613, "global_step": 36, "_timestamp": 1710097880.5782745, "_runtime": 97.63671541213989, "_step": 36}', '{"train_loss": 8.312021255493164, "global_step": 37, "_timestamp": 1710097882.1231382, "_runtime": 99.18157911300659, "_step": 37}', '{"train_loss": 8.120840072631836, "global_step": 38, "_timestamp": 1710097883.383906, "_runtime": 100.44234681129456, "_step": 38}', '{"train_loss": 8.157307624816895, "global_step": 39, "_timestamp": 1710097884.915055, "_runtime": 101.9734959602356, "_step": 39}', '{"train_loss": 7.889118671417236, "global_step": 40, "_timestamp": 1710097886.178994, "_runtime": 103.23743486404419, "_step": 40}']}, 'wandb-events.jsonl': {'offset': 1, 'content': ['{"system.disk.\\\\.usagePercent": 71.1, "system.disk.\\\\.usageGB": 169.15, "system.disk.in": 1728.81, "system.disk.out": 468.24, "system.cpu": 3.56, "system.cpu.0.cpu_percent": 8.63, "system.cpu.1.cpu_percent": 11.87, "system.cpu.2.cpu_percent": 10.03, "system.cpu.3.cpu_percent": 28.49, "system.cpu.4.cpu_percent": 5.01, "system.cpu.5.cpu_percent": 5.91, "system.cpu.6.cpu_percent": 11.03, "system.cpu.7.cpu_percent": 14.17, "system.cpu.8.cpu_percent": 2.54, "system.cpu.9.cpu_percent": 1.7, "system.cpu.10.cpu_percent": 12.38, "system.cpu.11.cpu_percent": 2.07, "system.proc.cpu.threads": 41, "system.proc.memory.availableMB": 496.52, "system.memory": 93.41, "system.proc.memory.rssMB": 1599.82, "system.proc.memory.percent": 21.21, "system.network.sent": 5983177.93, "system.network.recv": 4413383.4, "system.gpu.0.memoryAllocated": 99.62, "system.gpu.process.0.memoryAllocated": 99.62, "system.gpu.0.memoryAllocatedBytes": 4278665216.0, "system.gpu.process.0.memoryAllocatedBytes": 4278665216.0, "system.gpu.0.memory": 69.93, "system.gpu.process.0.memory": 69.93, "system.gpu.0.gpu": 99.53, "system.gpu.process.0.gpu": 99.53, "system.gpu.0.temp": 48.53, "system.gpu.process.0.temp": 48.53, "system.gpu.0.powerWatts": 18.77, "system.gpu.process.0.powerWatts": 18.77, "system.gpu.0.powerPercent": 96.15, "system.gpu.process.0.powerPercent": 96.15, "_wandb": true, "_timestamp": 1710097875.837326, "_runtime": 92.895767}', '{"system.disk.\\\\.usagePercent": 71.1, "system.disk.\\\\.usageGB": 169.16, "system.disk.in": 2487.22, "system.disk.out": 564.64, "system.cpu": 7.56, "system.cpu.0.cpu_percent": 51.77, "system.cpu.1.cpu_percent": 17.83, "system.cpu.2.cpu_percent": 21.85, "system.cpu.3.cpu_percent": 25.77, "system.cpu.4.cpu_percent": 10.77, "system.cpu.5.cpu_percent": 12.07, "system.cpu.6.cpu_percent": 8.78, "system.cpu.7.cpu_percent": 7.92, "system.cpu.8.cpu_percent": 1.03, "system.cpu.9.cpu_percent": 1.03, "system.cpu.10.cpu_percent": 0.0, "system.cpu.11.cpu_percent": 0.52, "system.proc.cpu.threads": 41, "system.proc.memory.availableMB": 569.34, "system.memory": 92.45, "system.proc.memory.rssMB": 1601.43, "system.proc.memory.percent": 21.24, "system.network.sent": 11511303.5, "system.network.recv": 5494210.5, "system.gpu.0.memoryAllocated": 99.57, "system.gpu.process.0.memoryAllocated": 99.57, "system.gpu.0.memoryAllocatedBytes": 4276568064.0, "system.gpu.process.0.memoryAllocatedBytes": 4276568064.0, "system.gpu.0.memory": 37.4, "system.gpu.process.0.memory": 37.4, "system.gpu.0.gpu": 99.13, "system.gpu.process.0.gpu": 99.13, "system.gpu.0.temp": 51.87, "system.gpu.process.0.temp": 51.87, "system.gpu.0.powerWatts": 29.46, "system.gpu.process.0.powerWatts": 29.46, "system.gpu.0.powerPercent": 98.21, "system.gpu.process.0.powerPercent": 98.21, "_wandb": true, "_timestamp": 1710097887.79762, "_runtime": 104.856061}']}, 'output.log': {'offset': 8, 'content': ['ERROR 2024-03-10T19:11:29.676204 Traceback (most recent call last):\n', 'ERROR 2024-03-10T19:11:29.676204   File "C:\\Users\\HP PAVILION\\Documents\\GitHub\\final\\train.py", line 226, in <module>\n', 'ERROR 2024-03-10T19:11:29.676204     train_model(config)\n', 'ERROR 2024-03-10T19:11:29.676204   File "C:\\Users\\HP PAVILION\\Documents\\GitHub\\final\\train.py", line 174, in train_model\n', 'ERROR 2024-03-10T19:11:29.676204     wandb.log({"train_loss": loss.item(), "global_step": global_step})\n', 'ERROR 2024-03-10T19:11:29.676204 KeyboardInterrupt\n']}}, 'dropped': 0}}
+2024-03-11 00:42:08,121 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:42:08,674 INFO    SenderThread:10080 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x0000017F2DF82DD0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000017F2DF82DD0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\internal\internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\HP PAVILION\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000017F2DF82DD0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+2024-03-11 00:42:09,418 WARNING FileStreamThread:10080 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/aryamangupta2004/linformer/1g8c0ybz/file_stream (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000017F2DF82A40>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x0000017F2CBE6DD0>>, timeout=180.0), args: ('https://api.wandb.ai/files/aryamangupta2004/linformer/1g8c0ybz/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"train_loss": 7.889118671417236, "global_step": 40, "_timestamp": 1710097886.178994, "_runtime": 103.23743486404419, "_step": 40, "_wandb": {"runtime": 103}}']}, 'wandb-history.jsonl': {'offset': 24, 'content': ['{"train_loss": 8.718867301940918, "global_step": 24, "_timestamp": 1710097863.7441142, "_runtime": 80.80255508422852, "_step": 24}', '{"train_loss": 8.68809986114502, "global_step": 25, "_timestamp": 1710097865.2730484, "_runtime": 82.3314893245697, "_step": 25}', '{"train_loss": 8.75367546081543, "global_step": 26, "_timestamp": 1710097866.5384092, "_runtime": 83.59685015678406, "_step": 26}', '{"train_loss": 8.613570213317871, "global_step": 27, "_timestamp": 1710097868.062857, "_runtime": 85.12129783630371, "_step": 27}', '{"train_loss": 8.640501022338867, "global_step": 28, "_timestamp": 1710097869.3352354, "_runtime": 86.39367628097534, "_step": 28}', '{"train_loss": 8.513769149780273, "global_step": 29, "_timestamp": 1710097870.8698554, "_runtime": 87.92829632759094, "_step": 29}', '{"train_loss": 8.444693565368652, "global_step": 30, "_timestamp": 1710097872.1681838, "_runtime": 89.22662472724915, "_step": 30}', '{"train_loss": 8.494474411010742, "global_step": 31, "_timestamp": 1710097873.7359803, "_runtime": 90.79442119598389, "_step": 31}', '{"train_loss": 8.38031005859375, "global_step": 32, "_timestamp": 1710097875.0020056, "_runtime": 92.0604465007782, "_step": 32}', '{"train_loss": 8.396270751953125, "global_step": 33, "_timestamp": 1710097876.5326495, "_runtime": 93.59109044075012, "_step": 33}', '{"train_loss": 8.182684898376465, "global_step": 34, "_timestamp": 1710097877.7813873, "_runtime": 94.83982825279236, "_step": 34}', '{"train_loss": 8.316879272460938, "global_step": 35, "_timestamp": 1710097879.3126287, "_runtime": 96.37106966972351, "_step": 35}', '{"train_loss": 8.210827827453613, "global_step": 36, "_timestamp": 1710097880.5782745, "_runtime": 97.63671541213989, "_step": 36}', '{"train_loss": 8.312021255493164, "global_step": 37, "_timestamp": 1710097882.1231382, "_runtime": 99.18157911300659, "_step": 37}', '{"train_loss": 8.120840072631836, "global_step": 38, "_timestamp": 1710097883.383906, "_runtime": 100.44234681129456, "_step": 38}', '{"train_loss": 8.157307624816895, "global_step": 39, "_timestamp": 1710097884.915055, "_runtime": 101.9734959602356, "_step": 39}', '{"train_loss": 7.889118671417236, "global_step": 40, "_timestamp": 1710097886.178994, "_runtime": 103.23743486404419, "_step": 40}']}, 'wandb-events.jsonl': {'offset': 1, 'content': ['{"system.disk.\\\\.usagePercent": 71.1, "system.disk.\\\\.usageGB": 169.15, "system.disk.in": 1728.81, "system.disk.out": 468.24, "system.cpu": 3.56, "system.cpu.0.cpu_percent": 8.63, "system.cpu.1.cpu_percent": 11.87, "system.cpu.2.cpu_percent": 10.03, "system.cpu.3.cpu_percent": 28.49, "system.cpu.4.cpu_percent": 5.01, "system.cpu.5.cpu_percent": 5.91, "system.cpu.6.cpu_percent": 11.03, "system.cpu.7.cpu_percent": 14.17, "system.cpu.8.cpu_percent": 2.54, "system.cpu.9.cpu_percent": 1.7, "system.cpu.10.cpu_percent": 12.38, "system.cpu.11.cpu_percent": 2.07, "system.proc.cpu.threads": 41, "system.proc.memory.availableMB": 496.52, "system.memory": 93.41, "system.proc.memory.rssMB": 1599.82, "system.proc.memory.percent": 21.21, "system.network.sent": 5983177.93, "system.network.recv": 4413383.4, "system.gpu.0.memoryAllocated": 99.62, "system.gpu.process.0.memoryAllocated": 99.62, "system.gpu.0.memoryAllocatedBytes": 4278665216.0, "system.gpu.process.0.memoryAllocatedBytes": 4278665216.0, "system.gpu.0.memory": 69.93, "system.gpu.process.0.memory": 69.93, "system.gpu.0.gpu": 99.53, "system.gpu.process.0.gpu": 99.53, "system.gpu.0.temp": 48.53, "system.gpu.process.0.temp": 48.53, "system.gpu.0.powerWatts": 18.77, "system.gpu.process.0.powerWatts": 18.77, "system.gpu.0.powerPercent": 96.15, "system.gpu.process.0.powerPercent": 96.15, "_wandb": true, "_timestamp": 1710097875.837326, "_runtime": 92.895767}', '{"system.disk.\\\\.usagePercent": 71.1, "system.disk.\\\\.usageGB": 169.16, "system.disk.in": 2487.22, "system.disk.out": 564.64, "system.cpu": 7.56, "system.cpu.0.cpu_percent": 51.77, "system.cpu.1.cpu_percent": 17.83, "system.cpu.2.cpu_percent": 21.85, "system.cpu.3.cpu_percent": 25.77, "system.cpu.4.cpu_percent": 10.77, "system.cpu.5.cpu_percent": 12.07, "system.cpu.6.cpu_percent": 8.78, "system.cpu.7.cpu_percent": 7.92, "system.cpu.8.cpu_percent": 1.03, "system.cpu.9.cpu_percent": 1.03, "system.cpu.10.cpu_percent": 0.0, "system.cpu.11.cpu_percent": 0.52, "system.proc.cpu.threads": 41, "system.proc.memory.availableMB": 569.34, "system.memory": 92.45, "system.proc.memory.rssMB": 1601.43, "system.proc.memory.percent": 21.24, "system.network.sent": 11511303.5, "system.network.recv": 5494210.5, "system.gpu.0.memoryAllocated": 99.57, "system.gpu.process.0.memoryAllocated": 99.57, "system.gpu.0.memoryAllocatedBytes": 4276568064.0, "system.gpu.process.0.memoryAllocatedBytes": 4276568064.0, "system.gpu.0.memory": 37.4, "system.gpu.process.0.memory": 37.4, "system.gpu.0.gpu": 99.13, "system.gpu.process.0.gpu": 99.13, "system.gpu.0.temp": 51.87, "system.gpu.process.0.temp": 51.87, "system.gpu.0.powerWatts": 29.46, "system.gpu.process.0.powerWatts": 29.46, "system.gpu.0.powerPercent": 98.21, "system.gpu.process.0.powerPercent": 98.21, "_wandb": true, "_timestamp": 1710097887.79762, "_runtime": 104.856061}']}, 'output.log': {'offset': 8, 'content': ['ERROR 2024-03-10T19:11:29.676204 Traceback (most recent call last):\n', 'ERROR 2024-03-10T19:11:29.676204   File "C:\\Users\\HP PAVILION\\Documents\\GitHub\\final\\train.py", line 226, in <module>\n', 'ERROR 2024-03-10T19:11:29.676204     train_model(config)\n', 'ERROR 2024-03-10T19:11:29.676204   File "C:\\Users\\HP PAVILION\\Documents\\GitHub\\final\\train.py", line 174, in train_model\n', 'ERROR 2024-03-10T19:11:29.676204     wandb.log({"train_loss": loss.item(), "global_step": global_step})\n', 'ERROR 2024-03-10T19:11:29.676204 KeyboardInterrupt\n']}}, 'dropped': 0}}
+2024-03-11 00:42:13,162 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:42:18,173 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:42:23,209 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-11 00:42:24,216 INFO    wandb-upload_1:10080 [upload_job.py:push():89] Uploaded file C:\Users\HP PAVILION\AppData\Local\wandb\wandb\artifacts\staging\tmp7wtaxv4y
+2024-03-11 00:42:24,219 INFO    wandb-upload_0:10080 [upload_job.py:push():89] Uploaded file C:\Users\HP PAVILION\AppData\Local\wandb\wandb\artifacts\staging\tmpmitlffgy
+2024-03-11 00:42:26,353 INFO    SenderThread:10080 [sender.py:send_artifact():1443] sent artifact job-https___github.com_aryamangupta04_linformer.git_train.py - {'id': 'QXJ0aWZhY3Q6NzUwNTYyOTc5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0NzQ2NDU1NA==', 'latestArtifact': None}}
+2024-03-11 00:42:26,353 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:42:26,353 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-03-11 00:42:26,355 INFO    SenderThread:10080 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-11 00:42:26,355 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 00:42:26,577 INFO    SenderThread:10080 [dir_watcher.py:finish():388] scan: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files
+2024-03-11 00:42:26,577 INFO    SenderThread:10080 [dir_watcher.py:finish():402] scan save: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\config.yaml config.yaml
+2024-03-11 00:42:26,577 INFO    SenderThread:10080 [dir_watcher.py:finish():402] scan save: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log output.log
+2024-03-11 00:42:26,577 INFO    SenderThread:10080 [dir_watcher.py:finish():402] scan save: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\requirements.txt requirements.txt
+2024-03-11 00:42:26,584 INFO    SenderThread:10080 [dir_watcher.py:finish():402] scan save: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-metadata.json wandb-metadata.json
+2024-03-11 00:42:26,584 INFO    SenderThread:10080 [dir_watcher.py:finish():402] scan save: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json wandb-summary.json
+2024-03-11 00:42:26,591 INFO    SenderThread:10080 [sender.py:transition_state():613] send defer: 10
+2024-03-11 00:42:26,591 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: poll_exit
+2024-03-11 00:42:26,591 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:42:26,591 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-11 00:42:26,598 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:42:26,598 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-03-11 00:42:26,598 INFO    SenderThread:10080 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-11 00:42:27,237 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-11 00:42:27,237 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: poll_exit
+2024-03-11 00:42:27,278 INFO    wandb-upload_1:10080 [upload_job.py:push():131] Uploaded file C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\config.yaml
+2024-03-11 00:42:27,382 INFO    wandb-upload_0:10080 [upload_job.py:push():131] Uploaded file C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\output.log
+2024-03-11 00:42:27,557 INFO    wandb-upload_3:10080 [upload_job.py:push():131] Uploaded file C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\wandb-summary.json
+2024-03-11 00:42:27,573 INFO    wandb-upload_2:10080 [upload_job.py:push():131] Uploaded file C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\files\requirements.txt
+2024-03-11 00:42:27,786 INFO    Thread-15 (_thread_body):10080 [sender.py:transition_state():613] send defer: 11
+2024-03-11 00:42:27,786 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:42:27,786 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-11 00:42:27,786 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:42:27,786 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-03-11 00:42:27,786 INFO    SenderThread:10080 [file_pusher.py:join():178] waiting for file pusher
+2024-03-11 00:42:27,786 INFO    SenderThread:10080 [sender.py:transition_state():613] send defer: 12
+2024-03-11 00:42:27,786 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:42:27,786 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-11 00:42:27,786 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:42:27,786 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-03-11 00:42:27,786 INFO    SenderThread:10080 [file_stream.py:finish():595] file stream finish called
+2024-03-11 00:42:28,103 INFO    SenderThread:10080 [file_stream.py:finish():599] file stream finish is done
+2024-03-11 00:42:28,103 INFO    SenderThread:10080 [sender.py:transition_state():613] send defer: 13
+2024-03-11 00:42:28,103 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:42:28,103 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-11 00:42:28,103 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:42:28,103 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-03-11 00:42:28,103 INFO    SenderThread:10080 [sender.py:transition_state():613] send defer: 14
+2024-03-11 00:42:28,103 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 00:42:28,103 DEBUG   SenderThread:10080 [sender.py:send():378] send: final
+2024-03-11 00:42:28,103 INFO    HandlerThread:10080 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-11 00:42:28,103 DEBUG   SenderThread:10080 [sender.py:send():378] send: footer
+2024-03-11 00:42:28,103 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: defer
+2024-03-11 00:42:28,103 INFO    SenderThread:10080 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-03-11 00:42:28,103 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-11 00:42:28,103 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-11 00:42:28,103 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: server_info
+2024-03-11 00:42:28,103 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: poll_exit
+2024-03-11 00:42:28,103 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-11 00:42:28,119 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: poll_exit
+2024-03-11 00:42:28,119 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-11 00:42:28,119 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: server_info
+2024-03-11 00:42:28,119 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 00:42:28,119 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: job_info
+2024-03-11 00:42:28,405 DEBUG   SenderThread:10080 [sender.py:send_request():405] send_request: job_info
+2024-03-11 00:42:28,420 INFO    MainThread:10080 [wandb_run.py:_footer_history_summary_info():3851] rendering history
+2024-03-11 00:42:28,420 INFO    MainThread:10080 [wandb_run.py:_footer_history_summary_info():3883] rendering summary
+2024-03-11 00:42:28,420 INFO    MainThread:10080 [wandb_run.py:_footer_sync_info():3810] logging synced files
+2024-03-11 00:42:28,420 DEBUG   HandlerThread:10080 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-11 00:42:28,420 INFO    HandlerThread:10080 [handler.py:finish():869] shutting down handler
+2024-03-11 00:42:29,131 INFO    WriterThread:10080 [datastore.py:close():296] close: C:\Users\HP PAVILION\Documents\GitHub\final\wandb\run-20240311_003942-1g8c0ybz\run-1g8c0ybz.wandb
+2024-03-11 00:42:29,436 INFO    SenderThread:10080 [sender.py:finish():1521] shutting down sender
+2024-03-11 00:42:29,436 INFO    SenderThread:10080 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-11 00:42:29,436 INFO    SenderThread:10080 [file_pusher.py:join():178] waiting for file pusher

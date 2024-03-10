@@ -1,0 +1,41 @@
+
+Using device cuda
+max length of source sentence:309
+max length of target sentence:274
+
+Processing epoch 00:   0%|                                                                                          | 1/3638 [00:03<3:08:13,  3.11s/it, loss=10.056]
+Actual Target: — Sì , approvava tutto . [EOS]
+Source Text: [SOS] " He approved of them -- yes ." [EOS]
+Sample Prediction: magnifica puossi diciassette bronzo mentali accostarmegli anzi insano potrei insano risultante parliamo darci potrei insano contavano sopportare illimitato potrei incoraggiava sostituita peccato sottometteva infinita evidenti rade insiste infinita insano provasse organetto fornito occupava insano fornito interrogate sapessi oneste diamanti diamanti fornito scene valutare sapessi mantenermi Ve flusso accidente cadevano Cercai Eccole maglia aitante climi essenza prolungato sopraccigli darci accostarono chiazze chiudete collocate ricordando Dapprima insano bottone essenza vettovaglie bottone essenza insano prestavano accadeva separazione ricordando arrestare accostarmegli arrestare insano insano insano burocrate insano affilata fuga Gall Maria formando quintali insano insano dimostravano quarantacinque insano levandosi avvicinando strepito rabbia invadeva apparato valgo valgo appunti acquistava pentirete apparato apparato quarantacinque ricercati scòrsi spaziosa quarantacinque girano 8 annunziava accennandomi pesi orgogliosi Eccole Dent annunziava datele separazione insano mantenermi insano eccellentissimi vedrà annunziava chiudete appreso calma rapporti derivasse accusarlo accosto scritti sopportare magnifica braccetto vergognare jeune infinita stabiliti biblioteca stabiliti moltitudine stabiliti tirando soggezione Eccole scoprirne Vivendo rabbioso moltitudine scellerata stendardo Hampton svegliatosi lume Eccole potrei potrei eccitanti Ierone smorfia tabacco timor svegliatosi Caraibi argomentazioni orgogliosi condur vergognare manica ossequioso Eccole accennandomi stendardo potrà viaggiato svolazzanti avvicinando quintali verdura narici potrei quintali potrei tristo prolungato organetto Eccole nudi Eccole mantenne valutare mantenne aiuterà sottometteva insiste riconobbi orientale svegliatosi svegliatosi deciderà deciderà continuavamo irrigidì potrà svolazzanti Diedi deceat trattar accostarmegli provammo salirmi irrigidì Guardava sociale irrigidì ricercava irrigidì saetta Giamaica Giamaica scivolato separazione separazione Eccole squisita savanne colui argomentazioni minacciati mantenermi soffriva orgogliosi piacimento scritti ravvivare stracci rasciugò rasciugò materie interrogate enormi savanne tenaci intabarrato ciascun potremo decidemmo battesimo abbondante Diedi affezioni potete scoppiata stracci Karenin Diedi scoppiata misurava pianterreno sceglieva scoppiata stracci enormi orgogliosi alacrità calanca potranno zoccoli Karenin insano riporvi aspramente riporvi bue Avreste bue giurì disformità disformità riporvi potrei Eccole separazione insiste rabbioso rasciugò commuovere presomi rugginosa viaggiato aspettavate rugginosa addivenisse salirmi potrà Eccole colpivano presomi zoccoli accennandomi acquistarlo vederci Eccole orgogliosi vederci quelle aspramente violentissime immaginandosi aveva beveva Eccole accostarmegli civiltà aiuterà civiltà pietasign pietasign piccione Opera Naden accennandomi violentissime violentissime risultarono ravvivare ossequioso petrolio ravvivare Aleksandrovic scoperta inconsistente potremo parlamento figurarvi eccessi separazione difenderò ucciso ucciso quindicina Portatela ucciso sbassare
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Processing epoch 00:   1%|█                                                                                         | 41/3638 [01:24<2:03:30,  2.06s/it, loss=7.889]
+Traceback (most recent call last):
+  File "C:\Users\HP PAVILION\Documents\GitHub\final\train.py", line 226, in <module>
+    train_model(config)
+  File "C:\Users\HP PAVILION\Documents\GitHub\final\train.py", line 174, in train_model
+    wandb.log({"train_loss": loss.item(), "global_step": global_step})
+KeyboardInterrupt
