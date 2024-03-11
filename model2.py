@@ -50,21 +50,15 @@ class FeedForwardBlock(nn.Module):
 class LinformerProjection(nn.Module):
     def __init__(self, seq_len, dim, heads, k):
         super().__init__()
-        # Assuming projection is done per head, adjust dimensions accordingly
         self.proj_key = nn.Linear(seq_len, k, bias=False)
         self.proj_value = nn.Linear(seq_len, k, bias=False)
 
     def forward(self, key, value):
-        # Reshape key and value for projection:
-        # Assuming key and value shapes are (batch_size, heads, seq_len, d_k)
         batch_size, heads, seq_len, d_k = key.shape
 
         # Flatten batch_size and heads to treat each sequence separately
         key = key.reshape(batch_size * heads, seq_len, d_k)
         value = value.reshape(batch_size * heads, seq_len, d_k)
-
-        # Project key and value
-        # Note: The projection here projects across the sequence length, reducing it to k
         # Transpose for linear layer to treat seq_len as feature dimension
         key_projected = self.proj_key(key.transpose(1, 2)).transpose(1, 2)
         value_projected = self.proj_value(value.transpose(1, 2)).transpose(1, 2)
@@ -124,6 +118,10 @@ class LinformerMultiHeadAttentionBlock(nn.Module):
 
         if mask is not None:
             mask = mask.unsqueeze(1)
+            '''The .contiguous() method is called to ensure that the memory layout of the transposed tensor is contiguous. 
+            When you transpose a tensor, PyTorch might create a tensor that does not store its elements in contiguous blocks of memory
+            . Many PyTorch operations require the tensor to be contiguous to work correctly or efficiently. 
+            Calling .contiguous() after a transpose operation is a common practice to resolve this.'''
 
         attention_output, attention_weights = self.scaled_dot_product_attention(q, k, v, mask)
         attention_output = attention_output.transpose(1, 2).contiguous().view(batch_size, -1, self.d_model)
